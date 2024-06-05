@@ -67,6 +67,8 @@ To start the federated learning process, follow these steps:
 
 1. **Start the Server**: Run the `server.py` script to start the central server. You can specify the server address and configuration parameters such as the number of rounds for federated training.
 
+   ![Alt Text](screenshots/Server.JPG)
+
     #### Central Server
     
     Start the central server by running:
@@ -77,9 +79,9 @@ To start the federated learning process, follow these steps:
     
     Replace `<server_host>` and `<server_port>` with the desired host and port for the central server. `<num_rounds>` specifies the number of federated learning rounds.
 
-   ![Alt Text](screenshots/Server.JPG)
-
 3. **Start the Clients**: Run the `client.py` script on each client device to participate in the federated learning process. You can specify the server address and other parameters such as the model architecture and dataset path.
+
+   ![Alt Text](screenshots/Client.JPG)
 
     #### Clients
     
@@ -90,8 +92,6 @@ To start the federated learning process, follow these steps:
     ```
     
     Replace `<server_host>` and `<server_port>` with the host and port where the central server is running. Adjust other parameters (`--model`, `--batch_train`, `--num_partitions`, etc.) based on your requirements.
-
-   ![Alt Text](screenshots/Client.JPG)
 
 5. **Monitor Training**: Monitor the training process on the server as it progresses through multiple rounds of federated learning. You can track metrics such as loss, accuracy, and AUC score.
 
