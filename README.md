@@ -67,27 +67,27 @@ To start the federated learning process, follow these steps:
 
 1. **Start the Server**: Run the `server.py` script to start the central server. You can specify the server address and configuration parameters such as the number of rounds for federated training.
 
-        #### Central Server
-        
-        Start the central server by running:
-        
-        ```bash
-        python server.py --host <server_host> --port <server_port> --rounds <num_rounds>
-        ```
-        
-        Replace `<server_host>` and `<server_port>` with the desired host and port for the central server. `<num_rounds>` specifies the number of federated learning rounds.
+    #### Central Server
+    
+    Start the central server by running:
+    
+    ```bash
+    python server.py --host <server_host> --port <server_port> --rounds <num_rounds>
+    ```
+    
+    Replace `<server_host>` and `<server_port>` with the desired host and port for the central server. `<num_rounds>` specifies the number of federated learning rounds.
 
 2. **Start the Clients**: Run the `client.py` script on each client device to participate in the federated learning process. You can specify the server address and other parameters such as the model architecture and dataset path.
 
-        #### Clients
-        
-        Deploy clients by running:
-        
-        ```bash
-        python client.py --model "efficientnet-b2" --batch_train 32 --num_partitions 20 --gpu 0 --tags "Exp 5. FedBN" --path "/path/to/dataset" --host <server_host> --port <server_port>
-        ```
-        
-        Replace `<server_host>` and `<server_port>` with the host and port where the central server is running. Adjust other parameters (`--model`, `--batch_train`, `--num_partitions`, etc.) based on your requirements.
+    #### Clients
+    
+    Deploy clients by running:
+    
+    ```bash
+    python client.py --model "efficientnet-b2" --batch_train 32 --num_partitions 20 --gpu 0 --tags "Exp 5. FedBN" --path "/path/to/dataset" --host <server_host> --port <server_port>
+    ```
+    
+    Replace `<server_host>` and `<server_port>` with the host and port where the central server is running. Adjust other parameters (`--model`, `--batch_train`, `--num_partitions`, etc.) based on your requirements.
 
 3. **Monitor Training**: Monitor the training process on the server as it progresses through multiple rounds of federated learning. You can track metrics such as loss, accuracy, and AUC score.
 
