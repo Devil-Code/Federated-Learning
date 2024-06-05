@@ -5,13 +5,13 @@
 This project implements federated learning for melanoma classification using PyTorch and Flower (FL). Federated learning is a machine learning setting where many clients (in this case, devices owned by end-users) collaboratively train a model under the orchestration of a central server (in this case, implemented using Flower).
 
 ## Table of Contents
--[Project Structure](#project-structure)
--[Requirements](#requirements)
--[Running the Project](#running-the-project)
--[Configuration](#configuration)
--[Contributors](#contributors)
--[License](#license)
--[Contact Information](#contact-information)
+- [Project Structure](#project-structure)
+- [Requirements](#requirements)
+- [Running the Project](#running-the-project)
+- [Configuration](#configuration)
+- [Contributors](#contributors)
+- [License](#license)
+- [Contact Information](#contact-information)
 
 ## Project Structure
 
